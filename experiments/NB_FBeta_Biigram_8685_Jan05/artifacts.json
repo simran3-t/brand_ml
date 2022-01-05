@@ -1,0 +1,81 @@
+{
+    "models_info": [
+        {
+            "name": "<class 'sklearn.naive_bayes.BernoulliNB'>",
+            "classifier": {
+                "alpha": 0.1,
+                "binarize": 0.0,
+                "class_prior": null,
+                "fit_prior": true
+            }
+        },
+        {
+            "name": "<class 'sklearn.feature_extraction.text.TfidfVectorizer'>",
+            "vectorizer": {
+                "analyzer": "word",
+                "binary": false,
+                "decode_error": "strict",
+                "dtype": {
+                    "py/type": "numpy.float64"
+                },
+                "encoding": "utf-8",
+                "input": "content",
+                "lowercase": false,
+                "max_df": 0.8,
+                "max_features": null,
+                "min_df": 0.01,
+                "ngram_range": {
+                    "py/tuple": [
+                        1,
+                        2
+                    ]
+                },
+                "norm": "l2",
+                "preprocessor": null,
+                "smooth_idf": true,
+                "stop_words": null,
+                "strip_accents": null,
+                "sublinear_tf": false,
+                "token_pattern": "(?u)\\b\\w\\w+\\b",
+                "tokenizer": null,
+                "use_idf": true,
+                "vocabulary": null
+            }
+        }
+    ],
+    "tags": {
+        "details": [
+            "Uni Model",
+            "BernoulliNB"
+        ]
+    },
+    "timestamp": "2022-01-05T14:31:57.052008",
+    "name": "NB_FBeta_Biigram_8685_Jan05",
+    "results": {
+        "tn": 490.0,
+        "fp": 31.0,
+        "fn": 7.0,
+        "tp": 78.0,
+        "model_acc_score": 0.9372937293729373,
+        "model_f1_score": 0.8041237113402062,
+        "model_prec_score": 0.7155963302752294,
+        "model_recall_score": 0.9176470588235294,
+        "model_f2_score": 0.8685968819599109
+    },
+    "preprocess_config": {
+        "handle_unicode": true,
+        "handle_emoji": true,
+        "handle_email": true,
+        "handle_username": true,
+        "handle_hashtags": true,
+        "handle_url": true,
+        "handle_markup": true,
+        "handle_retweet": true,
+        "handle_case": true,
+        "handle_lemmatization": true,
+        "handle_stopwords": true,
+        "handle_punctuation": true,
+        "handle_contractions": true,
+        "print_stats": true
+    }
+}

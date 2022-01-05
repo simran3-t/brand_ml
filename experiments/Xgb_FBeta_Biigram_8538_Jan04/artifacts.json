@@ -1,0 +1,108 @@
+{
+    "models_info": [
+        {
+            "name": "<class 'xgboost.sklearn.XGBClassifier'>",
+            "classifier": {
+                "objective": "binary:logistic",
+                "use_label_encoder": false,
+                "base_score": 0.5,
+                "booster": "gbtree",
+                "colsample_bylevel": 1,
+                "colsample_bynode": 1,
+                "colsample_bytree": 1,
+                "enable_categorical": false,
+                "gamma": 0,
+                "gpu_id": -1,
+                "importance_type": null,
+                "interaction_constraints": "",
+                "learning_rate": 0.4,
+                "max_delta_step": 0,
+                "max_depth": 4,
+                "min_child_weight": 0.9,
+                "missing": NaN,
+                "monotone_constraints": "()",
+                "n_estimators": 150,
+                "n_jobs": 8,
+                "num_parallel_tree": 1,
+                "predictor": "auto",
+                "random_state": 42,
+                "reg_alpha": 0.6,
+                "reg_lambda": 0.3,
+                "scale_pos_weight": 1,
+                "subsample": 0.8,
+                "tree_method": "exact",
+                "validate_parameters": 1,
+                "verbosity": null,
+                "seed": 42
+            }
+        },
+        {
+            "name": "<class 'sklearn.feature_extraction.text.TfidfVectorizer'>",
+            "vectorizer": {
+                "analyzer": "word",
+                "binary": false,
+                "decode_error": "strict",
+                "dtype": {
+                    "py/type": "numpy.float64"
+                },
+                "encoding": "utf-8",
+                "input": "content",
+                "lowercase": false,
+                "max_df": 0.8,
+                "max_features": null,
+                "min_df": 0.01,
+                "ngram_range": {
+                    "py/tuple": [
+                        1,
+                        2
+                    ]
+                },
+                "norm": "l2",
+                "preprocessor": null,
+                "smooth_idf": true,
+                "stop_words": null,
+                "strip_accents": null,
+                "sublinear_tf": false,
+                "token_pattern": "(?u)\\b\\w\\w+\\b",
+                "tokenizer": null,
+                "use_idf": true,
+                "vocabulary": null
+            }
+        }
+    ],
+    "tags": {
+        "details": [
+            "Uni Model",
+            "XgBoost"
+        ]
+    },
+    "timestamp": "2022-01-05T13:42:32.097657",
+    "name": "Xgb_FBeta_Biigram_8538_Jan04",
+    "results": {
+        "tn": 589.0,
+        "fp": 28.0,
+        "fn": 19.0,
+        "tp": 91.0,
+        "model_acc_score": 0.9353507565337001,
+        "model_f1_score": 0.794759825327511,
+        "model_prec_score": 0.7647058823529411,
+        "model_recall_score": 0.8272727272727273,
+        "model_f2_score": 0.8139534883720931
+    },
+    "preprocess_config": {
+        "handle_unicode": true,
+        "handle_emoji": true,
+        "handle_email": true,
+        "handle_username": true,
+        "handle_hashtags": true,
+        "handle_url": true,
+        "handle_markup": true,
+        "handle_retweet": true,
+        "handle_case": true,
+        "handle_lemmatization": true,
+        "handle_stopwords": true,
+        "handle_punctuation": true,
+        "handle_contractions": true,
+        "print_stats": true
+    }
+}

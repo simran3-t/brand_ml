@@ -1,0 +1,92 @@
+{
+    "models_info": [
+        {
+            "name": "<class 'sklearn.svm._classes.SVC'>",
+            "classifier": {
+                "C": 9,
+                "break_ties": false,
+                "cache_size": 200,
+                "class_weight": "balanced",
+                "coef0": 0.0,
+                "decision_function_shape": "ovr",
+                "degree": 3,
+                "gamma": "scale",
+                "kernel": "linear",
+                "max_iter": -1,
+                "probability": true,
+                "random_state": 42,
+                "shrinking": true,
+                "tol": 0.001,
+                "verbose": false
+            }
+        },
+        {
+            "name": "<class 'sklearn.feature_extraction.text.TfidfVectorizer'>",
+            "vectorizer": {
+                "analyzer": "word",
+                "binary": false,
+                "decode_error": "strict",
+                "dtype": {
+                    "py/type": "numpy.float64"
+                },
+                "encoding": "utf-8",
+                "input": "content",
+                "lowercase": false,
+                "max_df": 0.8,
+                "max_features": null,
+                "min_df": 0.01,
+                "ngram_range": {
+                    "py/tuple": [
+                        1,
+                        1
+                    ]
+                },
+                "norm": "l2",
+                "preprocessor": null,
+                "smooth_idf": true,
+                "stop_words": null,
+                "strip_accents": null,
+                "sublinear_tf": false,
+                "token_pattern": "(?u)\\b\\w\\w+\\b",
+                "tokenizer": null,
+                "use_idf": true,
+                "vocabulary": null
+            }
+        }
+    ],
+    "tags": {
+        "details": [
+            "Uni Model",
+            "XgBoost"
+        ]
+    },
+    "timestamp": "2022-01-05T13:57:24.097092",
+    "name": "SVC_FBeta_Biigram_8512_Jan05",
+    "results": {
+        "tn": 476.0,
+        "fp": 45.0,
+        "fn": 6.0,
+        "tp": 79.0,
+        "model_acc_score": 0.9158415841584159,
+        "model_f1_score": 0.7559808612440192,
+        "model_prec_score": 0.6370967741935484,
+        "model_recall_score": 0.9294117647058824,
+        "model_f2_score": 0.851293103448276
+    },
+    "preprocess_config": {
+        "handle_unicode": true,
+        "handle_emoji": true,
+        "handle_email": true,
+        "handle_username": true,
+        "handle_hashtags": true,
+        "handle_url": true,
+        "handle_markup": true,
+        "handle_retweet": true,
+        "handle_case": true,
+        "handle_lemmatization": true,
+        "handle_stopwords": true,
+        "handle_punctuation": true,
+        "handle_contractions": true,
+        "print_stats": true
+    }
+}
